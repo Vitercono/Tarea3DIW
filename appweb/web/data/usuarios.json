@@ -1,0 +1,13 @@
+[
+    {
+        "email":"admin@tarea3diw.com",
+        "password":"1234",
+        "username":"Admin"
+    }
+    ,
+    {
+        "email":"user@tarea3diw.com",
+        "password":"4321",
+        "username":"User"
+    }
+]

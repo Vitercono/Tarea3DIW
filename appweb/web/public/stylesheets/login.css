@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+}
+.center-login{
+    background-image: url("../images/cine-fondo.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+        font-size: 3rem;
+        color: var(--font-color-h1);
+        text-align: center;
+        padding: 1rem;
+    }
+}
+
+.form-login{
+    background-color: var(--primary-color-difused);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    height: 50vh;
+    border: solid;
+
+    form{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+.control{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+    margin: 2rem;
+
+    &:has(.boton){
+        justify-content: center;
+    }
+
+    input{
+        height:3rem;
+        width: 75%;
+        font-size: var(--font-size-input);
+        margin-left: 1rem;
+        transition: 0.3s;
+
+        &:focus{
+            background-color: var(--bg-color);
+            transition: 0.3s;
+        }
+    }
+    
+    label{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        width:3rem;
+        height:3rem;
+        padding: 0.15rem;
+        
+
+        img{
+            width:100%;
+            height:100%;
+        }
+    }
+
+    .boton{
+        padding: 1.5rem;
+        font-size: var(--font-size-input);
+        color: white;
+        background-color: var(--primary-color-difused);
+        border-color: var(--secondary-color);
+        transition: 0.3s;
+
+        &:hover{
+            background-color: var(--primary-color);
+            transform: scale(1.1);
+        }
+    }
+
+    
+}

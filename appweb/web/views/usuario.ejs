@@ -1,0 +1,29 @@
+<head>
+    <%- include('partials/head') %>
+</head>
+<body class="usuario">
+    <section class="header" id="header">
+        <%- include('partials/header') %>
+    </section>
+
+    <section class="usuario-container">
+        <h1 class="usuario-titulo">Películas Disponibles</h1>
+        <div class="usuario">
+            <% listado.forEach(pelicula => { %>
+            <a href="/pelicula/<%=pelicula.id%>">
+                <figure class="tarjeta-pelicula">
+                    <img src="<%= pelicula.imagen %>" alt="<%= pelicula.nombre %>" class="tarjeta-imagen">
+                    <figcaption class="tarjeta-caption">
+                        <h2 class="titulo-pelicula"><%= pelicula.nombre %></h2>
+                        <p class="descripcion-pelicula"><%= pelicula.caption %></p>
+                    </figcaption>
+                </figure>
+            </a>
+            <% }) %>
+        </div>
+    </section>
+
+    <footer id="footer" class="footer">
+        <%- include('partials/footer') %>
+    </footer>
+</body>

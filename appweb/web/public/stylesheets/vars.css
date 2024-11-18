@@ -1,0 +1,14 @@
+:root{
+    font:14px "Lucida Grande", "Helvetica", Arial, sans-serif;
+    --primary-color: #d32f2f;;
+    --primary-color-difused: #d32f2f99;
+    --header-underliner: rgba(255, 255, 255, 0.425);
+    --secondary-color: #fbc02d;;
+    --secondary-color-difused: #fbc02d99;
+    --bg-color: #f7a99b;
+    --font-size-input: 2rem;
+    --font-color-input: #f5f5f5;
+    --font-color-h1: #e0e0e0;
+    --footer-color: #000000b3;
+    --footer-color-alt: #333333;
+}

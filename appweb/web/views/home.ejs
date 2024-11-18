@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head') %>
+</head>
+<body class="default">
+    <section class="header" id="header">
+        <%- include('partials/header') %>
+    </section>
+
+    <section class="cta" id="cta">
+        <div class="inner">
+            <div class="logo-cine-fondo"><img src="images/favicon.png" alt=""></div>
+            <h1 id="cambioGradiente">CineWeb</h1>
+            <p>Todas las películas que quieras y más en CineWeb.</p>
+            <a href="login.html"><button class="boton">Iniciar sesión</button></a>
+        </div>
+    </section>
+
+    <section class="highlights" id="highlights">
+        <div class="inner">
+            <h2>Películas Destacadas</h2>
+            <p>Explora algunas de las películas más populares de este mes.</p>
+            <div class="highlight-grid">
+                <div class="highlight-item">
+                    <img src="images/pelicula1.jpg" alt="Película 1">
+                    <h3>Tenet</h3>
+                    <input type="hidden" value='En un mundo donde el tiempo es una ilusión y las realidades se entrelazan, un agente secreto conocido solo como el Protagonista se embarca en una misión global para prevenir una amenaza que podría llevar a la destrucción del mundo tal como lo conocemos. A través de una narrativa compleja que desafía la lógica y el tiempo, el Protagonista descubre el concepto de "inversión", donde los objetos y las personas pueden moverse hacia atrás en el tiempo.'>
+                </div>
+                <div class="highlight-item">
+                    <img src="images/pelicula2.jpg" alt="Película 2">
+                    <h3>La Guía del Autoestopista Galáctico</h3>
+                    <input type="hidden" value="Esta hilarante y surrealista aventura sigue a Arthur Dent, un hombre común que es salvado de la demolición de su casa por su amigo alienígena Ford Prefect, solo para descubrir que la Tierra está a punto de ser destruida. Juntos, se embarcan en un viaje intergaláctico a bordo de naves espaciales absurdas, mientras exploran un universo lleno de personajes excéntricos y situaciones absurdas. Basada en la famosa obra de Douglas Adams, esta comedia de ciencia ficción nos invita a cuestionar la vida, el universo y todo lo demás, todo con un toque de ingenio y humor inigualable.">
+                </div>
+                <div class="highlight-item">
+                    <img src="images/pelicula3.jpg" alt="Película 3">
+                    <h3>El Hobbit: Un Viaje Inesperado</h3>
+                    <input type="hidden" value="En esta encantadora adaptación de la obra de J.R.R. Tolkien, seguimos a Bilbo Bolsón, un hobbit que lleva una vida tranquila y cómoda en la Comarca. Su mundo cambia drásticamente cuando el mago Gandalf y un grupo de valientes enanos liderados por Thorin Escudo de Roble lo reclutan para recuperar su hogar y su tesoro, actualmente custodiados por el temido dragón Smaug. A lo largo de su aventura, Bilbo descubre su valor y astucia, enfrentándose a trolls, goblins y criaturas fantásticas, y, lo más sorprendente, encuentra un anillo mágico que cambiará su vida para siempre. Con paisajes impresionantes y personajes memorables, esta película es un viaje épico lleno de amistad, valentía y el descubrimiento de uno mismo.">
+                </div>
+                <div class="highlight-item">
+                    <img src="images/pelicula4.jpg" alt="Película 4">
+                    <h3>Los Odiosos Ocho</h3>
+                    <input type="hidden" value='En este intenso western de Quentin Tarantino, la historia se desarrolla en un paisaje nevado de Wyoming, donde un grupo de extraños se ve atrapado en una cabaña durante una tormenta. Ocho personajes, cada uno con su propio pasado oscuro y secretos ocultos, se ven obligados a convivir en un ambiente tenso y lleno de desconfianza. A medida que las tensiones aumentan, las lealtades se ponen a prueba y la violencia estalla, revelando una red de traiciones y venganzas. Con un guion afilado, diálogos ingeniosos y una atmósfera cargada de suspenso, "Los Odiosos Ocho" ofrece una experiencia cinematográfica única que explora temas de justicia, traición y la naturaleza humana en situaciones extremas.'>
+                </div>
+            </div>
+        </div>
+
+        <div id="info-pelicula" class="info-pelicula">
+            
+        </div>
+    </section>
+
+
+    <footer class="footer" id="footer">
+        <%- include('partials/footer') %>
+    </footer>
+</body>
+<script src="javascripts/front.js"></script>
+</html>

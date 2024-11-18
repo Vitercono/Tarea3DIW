@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head') %>
+</head>
+<body>
+    <div class="center-login">
+        <section class="form-login" id="yoCambio">
+            <h1 id="h1-login">INICIO DE SESIÓN</h1>
+            <form method="post">
+                <div class="control">
+                    <label for="email"><img src="images/usuario.png" alt="usuario" id="cambiarColor"></label>
+                    <input type="email" name="email" id="email" placeholder="Correo electrónico">
+                </div>
+                <div class="control">
+                    <label for="pwd"><img src="images/pwd.png" alt="pwd" id="volverColor"></label>
+                    <input type="password" name="pwd" id="pwd" placeholder="Contraseña">
+                </div>
+                <div class="control">
+                    <button type="submit" class="boton">Iniciar sesión</button>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+<script src="javascripts/front.js"></script>
+</html>

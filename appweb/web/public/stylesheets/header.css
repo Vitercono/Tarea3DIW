@@ -1,0 +1,91 @@
+.header {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 5px var(--primary-color);
+
+    nav {
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(var(--secondary-color), var(--primary-color));
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+     
+      ul {
+        font-family: "Lucida Grande", "Helvetica", Arial, sans-serif !important;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+   
+        li {
+          font-family: "Lucida Grande", "Helvetica", Arial, sans-serif !important;
+          margin: 0;
+          transition: all 0.5s;
+          position: relative;
+   
+          &:hover {
+            background-color: var(--primary-color);
+            transform: scale(1.14);
+   
+            a {
+              color: var(--font-color-h1);
+            }
+          }
+   
+          a {
+            font-family: "Lucida Grande", "Helvetica", Arial, sans-serif !important;
+            display: block;
+            text-decoration: none;
+            font-family: "Lilita One", "sans-serif";
+            padding: 0.6rem 1.5rem;
+            font-size: 2rem;
+            color: var(--font-color-h1);
+          }
+   
+          &:hover ul.submenu {
+            display: flex;
+          }
+   
+   
+          ul.submenu {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            z-index: 2;
+            background-color: var(--primary-color);
+   
+            a {
+              color: var(--font-color-h1);
+            }
+   
+            li:hover a {
+              color: var(--primary-color);
+            }
+          }
+        }
+      }
+   
+      ul.mobile-open-menu {
+        display: none;
+
+        li{
+          position:unset;
+   
+          ul.submenu{
+            position:absolute;
+            left:0;
+            right:0;
+          }
+   
+        }
+   
+      }
+    }
+  }

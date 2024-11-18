@@ -1,0 +1,23 @@
+@import url("login.css");
+@import url("vars.css");
+@import url("home.css");
+@import url("header.css");
+@import url("footer.css");
+@import url("contacto.css");
+@import url("usuario.css");
+
+/* For WebKit-based browsers */
+div::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+  
+  /* For Mozilla-based browsers */
+  div::-moz-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
+.header#header{
+    position: sticky;
+}

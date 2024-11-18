@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head') %>
+</head>
+<body class="default">
+    <section class="header" id="header">
+        <%- include('partials/header') %>
+    </section>
+
+    <div class="fondo-gradiente">
+    <section class="bloque-central-contacto">
+        
+
+        <div class="contacto-izquierda">
+            <h2>Sobre nuestra empresa</h2>
+            <p>Somos una plataforma de streaming líder en la industria del entretenimiento, ofreciendo una amplia variedad de películas, series y documentales para disfrutar en cualquier momento y lugar.</p>
+            <ul>
+                <li><img src="images/check.png" alt="">Más de 10.000 títulos disponibles</li>
+                <li><img src="images/check.png" alt="">Disponible en más de 190 países</li>
+                <li><img src="images/check.png" alt="">Contenido original y exclusivo</li>
+                <li><img src="images/check.png" alt="">Calidad de video 4K y HDR</li>
+                <li><img src="images/check.png" alt="">Acceso multiplataforma (web, móvil, TV)</li>
+            </ul>
+        </div>
+
+        <div class="contacto-derecha">
+            
+            <form action="#">
+                <h2>¡Envíanos un mensaje!</h2>
+                <div class="control">
+                    <input type="text" name="user" id="user" placeholder="Nombre">
+                </div>
+                <div class="control">
+                    <input type="email" name="pwd" id="pwd" placeholder="Correo electrónico">
+                </div>
+                <div class="control">
+                    <textarea name="msg-contacto" id="msg-contacto" cols="30" rows="10" placeholder="Escribe tu mensaje aquí"></textarea>
+                </div>
+                <div class="control">
+                    <button type="submit" class="boton">Enviar mensaje</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    </section>
+
+
+    <footer class="footer" id="footer">
+        <%- include('partials/footer') %>
+    </footer>
+</body>
+</html>

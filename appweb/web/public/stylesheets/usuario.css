@@ -1,0 +1,55 @@
+body.usuario{
+    #header{
+        height: 10vh;
+    }
+
+    section{
+        height: 110vh;
+    }
+
+    .footer{
+        height: 25vh;
+    }
+}
+
+.usuario-container{
+    
+    h1{
+        justify-self: center;
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .usuario{
+        justify-self: center;
+        display: flex;
+        gap:1rem;
+        width: 80%;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        figure{
+            width: 25%;
+            padding:1rem;
+            margin:0;
+            border-radius:15px;
+            box-shadow: 1px 1px 1px black;
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s;
+
+            &:hover{
+                box-shadow: 1px 0px 1px black;
+                transition: 0.3s;
+            }
+
+            img{
+                border-radius: 15px;
+            }
+        }
+    }
+
+    
+}
