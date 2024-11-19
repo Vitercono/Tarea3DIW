@@ -5,7 +5,7 @@ var datos = require("../data/dataprovider");
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.redirect('/home');
+  res.redirect('/login');
 });
 
 router.get('/home', function(req,res){
@@ -28,7 +28,7 @@ router.get('/contacto', function(req,res){
 router.get('/pelicula/:id', function(req,res){
   const id = req.params.id;
   const pelicula = datos.getPeliculaById(id);
-  res.render('/pelicula', {title: "Pelicula", pelicula:pelicula})
+  res.render('pelicula', {title: pelicula.nombre, pelicula:pelicula})
 })
 
 router.post('/login', function(req,res){
@@ -39,6 +39,8 @@ router.post('/login', function(req,res){
 
   if(user){
     res.redirect('/home')
+  } else {
+    res.redirect('/login')
   }
-})
+});
 module.exports = router;

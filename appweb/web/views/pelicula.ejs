@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../stylesheets/style.css">
+    <%- include('partials/head') %>
+</head>
+<body class="default">
+    <header class="header" id="header">
+        <nav>
+            <ul>
+                <li><a href="../home">Inicio</a></li>
+                <li><a href="#">Catálogo</a></li>
+                <li><a href="../usuario">Tu colección</a></li>
+                <li><a href="../contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="pelicula-detalle-container">
+        <section class="pelicula-detalle">
+            <!-- Imagen de la película -->
+            <div class="pelicula-imagen">
+                <img src="<%= pelicula.imagen %>" alt="<%= pelicula.nombre %>" class="imagen-principal">
+            </div>
+            
+            <!-- Información de la película -->
+            <div class="informacion-pelicula">
+                <h1 class="titulo-pelicula"><%= pelicula.nombre %></h1>
+                <p class="descripcion-pelicula"><%= pelicula.descripcion %></p>
+                
+                <!-- Botones para mostrar la información adicional -->
+                <div class="info-adicional">
+                    <button class="info-btn" onclick="toggleInfo('genero')">Género</button>
+                    <div id="genero" class="info-contenido">
+                        <p><%= pelicula.genero %></p>
+                    </div>
+
+                    <button class="info-btn" onclick="toggleInfo('duracion')">Duración</button>
+                    <div id="duracion" class="info-contenido">
+                        <p><%= pelicula.duracion %> minutos</p>
+                    </div>
+
+                    <button class="info-btn" onclick="toggleInfo('director')">Director</button>
+                    <div id="director" class="info-contenido">
+                        <p><%= pelicula.director %></p>
+                    </div>
+
+                    <button class="info-btn" onclick="toggleInfo('reparto')">Reparto</button>
+                    <div id="reparto" class="info-contenido">
+                        <p><%= pelicula.reparto %></p>
+                    </div>
+                </div>
+                
+                <!-- Botón de volver -->
+                <div class="volver">
+                    <a href="/usuario" class="boton-volver">Volver a la lista</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="footer" id="footer-small">
+        <div class="flex-footer">
+            <h2>¡Gracias por elegirnos!</h2>
+            <p>En CineWeb, estamos comprometidos a ofrecerte una experiencia de entretenimiento única.
+                 Con una vasta selección de películas y series en streaming, siempre encontrarás algo para disfrutar.
+                  Nos apasiona brindarte contenido de calidad y facilitar tu acceso a las mejores opciones de entretenimiento, sin complicaciones.
+            </p>
+            <div class="flex-social-icons">
+                <a class="a-social-icon" href="#">
+                    <img class="social-icon" src="../images/gorjeo.png" alt="">
+                </a>
+                <a class="a-social-icon" href="#">
+                    <img class="social-icon" src="../images/linkedin.png" alt="">
+                </a>
+                <a class="a-social-icon" href="#">
+                    <img class="social-icon" src="../images/telegrama.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="flex-footer">
+            <ul>
+                <li><a href="">Enlace legal 1</a></li>
+                <li><a href="">Enlace legal 2</a></li>
+                <li><a href="">Enlace legal 3</a></li>
+                <li><a href="">Enlace legal 4</a></li>
+                <li><a href="">Enlace legal 5</a></li>
+            </ul>
+        </div>
+        <div class="flex-footer">
+            <h2>Ayúdanos a mejorar la página</h2>
+            <h3>¡Deja un comentario!</h3>
+            <form action="#">
+                <textarea name="comentario" id="comentario" cols="30" rows="5" placeholder="Escribe tu comentario aquí..."></textarea>
+                <button>Enviar</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+<script>
+    function toggleInfo(id) {
+        const infoContent = document.getElementById(id);
+        if (infoContent.style.display === "block") {
+            infoContent.style.display = "none";
+        } else {
+            infoContent.style.display = "block";
+        }
+    }
+</script>
+</html>

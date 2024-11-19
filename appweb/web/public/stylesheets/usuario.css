@@ -1,55 +1,52 @@
-body.usuario{
-    #header{
-        height: 10vh;
-    }
-
-    section{
-        height: 110vh;
-    }
-
-    .footer{
-        height: 25vh;
-    }
+body.usuario #header{
+    height: 10vh;
 }
 
-.usuario-container{
-    
-    h1{
-        justify-self: center;
-        text-align: center;
-        font-size: 2rem;
-    }
+h1.usuario-titulo{
+    font-size: 3rem;
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
 
-    .usuario{
-        justify-self: center;
-        display: flex;
-        gap:1rem;
-        width: 80%;
-        flex-wrap: wrap;
-        justify-content: center;
+.usuario-container .usuario {
+    justify-self: center;
+    display: flex;
+    gap: 1rem;
+    width: 100%; /* Asegura que ocupe el 100% del ancho del contenedor */
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
 
-        figure{
-            width: 25%;
-            padding:1rem;
-            margin:0;
-            border-radius:15px;
-            box-shadow: 1px 1px 1px black;
-            display: flex;
-            flex-direction:column;
-            justify-content: center;
-            align-items: center;
-            transition: 0.3s;
+.usuario-container .usuario a{
+    text-decoration: none;
+    color:black;
+}
 
-            &:hover{
-                box-shadow: 1px 0px 1px black;
-                transition: 0.3s;
-            }
+.usuario-container .usuario a figure {
+    flex: 1 1 calc(25% - 2rem); /* Ajuste dinámico para 4 columnas */
+    max-width: 300px; /* Evita que sean demasiado grandes */
+    padding: 1rem;
+    margin: 0;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Más suave para mejor estética */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff; /* Fondo para resaltar */
+    transition: 0.34s;
+}
 
-            img{
-                border-radius: 15px;
-            }
-        }
-    }
+.usuario-container .usuario a figure:hover {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Más definido en hover */
+    transform: scale(1.05); /* Efecto de zoom suave */
+}
 
-    
+.usuario-container .usuario a figure img {
+    width: 100%; /* Imagen ocupa todo el ancho del contenedor */
+    height: auto; /* Mantiene proporciones */
+    border-radius: 10px; /* Bordes redondeados */
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor */
 }

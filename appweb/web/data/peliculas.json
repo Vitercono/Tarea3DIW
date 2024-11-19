@@ -1,32 +1,57 @@
 [
-    {
-      "id":1,
-      "nombre": "El Señor de los Anillos: La Comunidad del Anillo",
-      "caption": "Una aventura épica para destruir el Anillo Único.",
-      "imagen": "https://picsum.photos/300?1"
-    },
-    {
-        "id":2,
-      "nombre": "Matrix",
-      "caption": "Una revolución en la percepción de la realidad.",
-      "imagen": "https://picsum.photos/300?2"
-    },
-    {
-        "id":3,
-      "nombre": "Inception",
-      "caption": "Sueños dentro de sueños en una misión peligrosa.",
-      "imagen": "https://picsum.photos/300?3"
-    },
-    {
-        "id":4,
-      "nombre": "Gladiador",
-      "caption": "La lucha por el honor y la venganza en la arena romana.",
-      "imagen": "https://picsum.photos/300?4"
-    },
-    {
-        "id":5,
-      "nombre": "El Padrino",
-      "caption": "La historia de la familia Corleone y su imperio criminal.",
-      "imagen": "https://picsum.photos/300?5"
-    }
-  ]
+  {
+    "id": 1,
+    "nombre": "El Señor de los Anillos: La Comunidad del Anillo",
+    "caption": "Una aventura épica para destruir el Anillo Único.",
+    "imagen": "https://picsum.photos/300?1",
+    "genero": "Aventura, Fantasía",
+    "duracion": 178,
+    "director": "Peter Jackson",
+    "reparto": "Elijah Wood, Ian McKellen, Viggo Mortensen",
+    "descripcion": "En la Tierra Media, un joven hobbit llamado Frodo Bolsón se embarca en un viaje para destruir el Anillo Único y evitar que el malvado Sauron conquiste el mundo. Con la ayuda de su leal amigo Sam y un grupo de aliados, Frodo enfrentará peligros mortales para salvar su hogar."
+  },
+  {
+    "id": 2,
+    "nombre": "Matrix",
+    "caption": "Una revolución en la percepción de la realidad.",
+    "imagen": "https://picsum.photos/300?2",
+    "genero": "Ciencia ficción, Acción",
+    "duracion": 136,
+    "director": "Lana Wachowski, Lilly Wachowski",
+    "reparto": "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss",
+    "descripcion": "Un hacker llamado Neo descubre que la realidad tal como la conocemos es una simulación creada por máquinas inteligentes para subyugar a la humanidad. Junto a un grupo de rebeldes, Neo luchará por liberar a la humanidad y destruir la Matrix."
+  },
+  {
+    "id": 3,
+    "nombre": "Inception",
+    "caption": "Sueños dentro de sueños en una misión peligrosa.",
+    "imagen": "https://picsum.photos/300?3",
+    "genero": "Ciencia ficción, Acción, Thriller",
+    "duracion": 148,
+    "director": "Christopher Nolan",
+    "reparto": "Leonardo DiCaprio, Joseph Gordon-Levitt, Ellen Page",
+    "descripcion": "Dominic Cobb es un ladrón experto en el arte de 'extracción', el robo de secretos del subconsciente de las personas durante sus sueños. Cobb es contratado para realizar una tarea aún más peligrosa: 'inception', insertar una idea en la mente de un objetivo, pero las líneas entre la realidad y el sueño comienzan a desdibujarse."
+  },
+  {
+    "id": 4,
+    "nombre": "Gladiador",
+    "caption": "La lucha por el honor y la venganza en la arena romana.",
+    "imagen": "https://picsum.photos/300?4",
+    "genero": "Acción, Aventura, Drama",
+    "duracion": 155,
+    "director": "Ridley Scott",
+    "reparto": "Russell Crowe, Joaquin Phoenix, Connie Nielsen",
+    "descripcion": "Maximus, un general romano, es traicionado por el emperador Commodus y se ve obligado a luchar como gladiador en la arena. A lo largo de su arduo viaje, Maximus busca venganza y justicia mientras busca restaurar el honor de su familia y el Imperio Romano."
+  },
+  {
+    "id": 5,
+    "nombre": "El Padrino",
+    "caption": "La historia de la familia Corleone y su imperio criminal.",
+    "imagen": "https://picsum.photos/300?5",
+    "genero": "Crimen, Drama",
+    "duracion": 175,
+    "director": "Francis Ford Coppola",
+    "reparto": "Marlon Brando, Al Pacino, James Caan",
+    "descripcion": "La historia de la familia Corleone, una de las familias más poderosas del crimen organizado en Nueva York. Don Vito Corleone, el líder de la familia, debe enfrentar amenazas tanto internas como externas mientras su hijo Michael, inicialmente ajeno al mundo criminal, es arrastrado a su oscuro legado."
+  }
+]

@@ -5,6 +5,7 @@
 @import url("footer.css");
 @import url("contacto.css");
 @import url("usuario.css");
+@import url("pelicula.css");
 
 /* For WebKit-based browsers */
 div::-webkit-scrollbar {

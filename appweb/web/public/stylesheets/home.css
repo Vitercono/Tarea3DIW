@@ -10,12 +10,12 @@ body.default {
         height: 10vh;
     }
 
-    section, .fondo-gradiente {
-        height: 70vh;
+    main, section, .fondo-gradiente {
+        height: 90vh;
     }
 
     footer {
-        height: 25vh;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
